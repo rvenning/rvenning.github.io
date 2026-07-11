@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venning Family Games</title>
+<meta name="description" content="Free family games to play in your browser: Monza, Chicken Cross and WordVoyage.">
+<meta name="theme-color" content="#101820">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<style>
+  :root{
+    --bg1:#131b26; --bg2:#0b1017;
+    --ink:#eef3f8; --muted:#9fb0c0;
+    --card:#1a2432; --card-edge:#2b3a4d;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    color:var(--ink);
+    background:radial-gradient(circle at 30% 10%, var(--bg1), var(--bg2));
+    min-height:100vh;
+    display:flex; flex-direction:column; align-items:center;
+    padding:2.5rem 1.25rem 3rem;
+  }
+  header{text-align:center; margin-bottom:2.5rem;}
+  h1{
+    font-size:clamp(1.8rem, 5vw, 2.8rem);
+    letter-spacing:.02em;
+  }
+  h1 .joy{display:inline-block; transform:rotate(-8deg); margin-right:.35rem;}
+  header p{color:var(--muted); margin-top:.6rem; font-size:1.05rem;}
+  main{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:1.5rem;
+    width:100%; max-width:960px;
+  }
+  .game{
+    display:flex; flex-direction:column;
+    background:var(--card);
+    border:1px solid var(--card-edge);
+    border-radius:18px;
+    overflow:hidden;
+    text-decoration:none; color:inherit;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .game:hover, .game:focus-visible{
+    transform:translateY(-4px);
+    box-shadow:0 12px 28px rgba(0,0,0,.45);
+  }
+  .banner{
+    height:130px;
+    display:flex; align-items:center; justify-content:center;
+    font-size:4rem;
+  }
+  .monza .banner{background:radial-gradient(circle at 35% 30%, #1c3f2a, #0f2418);}
+  .chicken .banner{background:linear-gradient(160deg, #24404f, #1c2a33 70%);}
+  .voyage .banner{background:linear-gradient(160deg, #6d4ff5, #4527c9 70%);}
+  .body{padding:1.1rem 1.25rem 1.4rem; display:flex; flex-direction:column; gap:.55rem; flex:1;}
+  .body h2{font-size:1.25rem;}
+  .tag{
+    font-size:.75rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--muted);
+  }
+  .body p{color:var(--muted); font-size:.95rem; line-height:1.45; flex:1;}
+  .play{
+    margin-top:.9rem;
+    align-self:flex-start;
+    font-weight:700; font-size:.95rem;
+    padding:.5rem 1.1rem; border-radius:999px;
+    color:#0b1017;
+  }
+  .monza .play{background:#f7c531;}
+  .chicken .play{background:#ffce54;}
+  .voyage .play{background:#c9b8ff;}
+  footer{margin-top:3rem; color:var(--muted); font-size:.85rem; text-align:center;}
+  footer a{color:inherit;}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="joy">🎮</span>Venning Family Games</h1>
+  <p>Free games to play in your browser — no installs, no ads, just fun.</p>
+</header>
+
+<main>
+  <a class="game monza" href="https://rvenning.github.io/monza/">
+    <div class="banner" aria-hidden="true">🏎️🎲</div>
+    <div class="body">
+      <span class="tag">2–6 players · Board game</span>
+      <h2>Monza</h2>
+      <p>The classic racing dice board game, rebuilt for the web. Roll the coloured dice and steer your car around the track to the chequered flag.</p>
+      <span class="play">Play Monza →</span>
+    </div>
+  </a>
+
+  <a class="game chicken" href="https://rvenning.github.io/chicken-cross/">
+    <div class="banner" aria-hidden="true">🐔🚗</div>
+    <div class="body">
+      <span class="tag">1 player · Arcade</span>
+      <h2>Chicken Cross</h2>
+      <p>Hop your chicken across busy roads, rushing rivers and railway lines. How far can you get before the traffic gets you?</p>
+      <span class="play">Play Chicken Cross →</span>
+    </div>
+  </a>
+
+  <a class="game voyage" href="https://rvenning.github.io/wordvoyage/">
+    <div class="banner" aria-hidden="true">🌍📜</div>
+    <div class="body">
+      <span class="tag">1 player · Word puzzle</span>
+      <h2>WordVoyage</h2>
+      <p>A word puzzle adventure around the globe. Solve puzzles, collect stars and voyage from country to country.</p>
+      <span class="play">Play WordVoyage →</span>
+    </div>
+  </a>
+</main>
+
+<footer>
+  Made with ❤️ by the Venning family · <a href="https://github.com/rvenning">GitHub</a>
+</footer>
+</body>
+</html>
