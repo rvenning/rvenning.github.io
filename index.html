@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Venning Family Games</title>
-<meta name="description" content="Free family games to play in your browser: Monza, Chicken Cross, WordVoyage, Block Party, Bible Quest, Brick Breaker DX, Deep Jungle, Alien Chomp, Beat Bugs, Reel Rush, Critter Clash, Word Siege, Sorting Office, Turret Town and Ricochet Spire.">
+<meta name="description" content="Free family games to play in your browser — arcade, puzzles, word games, strategy, rhythm and board games. Search by name or filter by age. No installs, no ads.">
 <meta name="theme-color" content="#101820">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
 <style>
@@ -12,6 +12,7 @@
     --bg1:#131b26; --bg2:#0b1017;
     --ink:#eef3f8; --muted:#9fb0c0;
     --card:#1a2432; --card-edge:#2b3a4d;
+    --chip:#1e2a3a; --chip-on:#eef3f8;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   body{
@@ -22,13 +23,64 @@
     display:flex; flex-direction:column; align-items:center;
     padding:2.5rem 1.25rem 3rem;
   }
-  header{text-align:center; margin-bottom:2.5rem;}
+  header{text-align:center; margin-bottom:1.75rem;}
   h1{
     font-size:clamp(1.8rem, 5vw, 2.8rem);
     letter-spacing:.02em;
   }
   h1 .joy{display:inline-block; transform:rotate(-8deg); margin-right:.35rem;}
   header p{color:var(--muted); margin-top:.6rem; font-size:1.05rem;}
+
+  /* ---- filter bar ---- */
+  .controls{
+    width:100%; max-width:960px;
+    display:flex; flex-direction:column; gap:.85rem;
+    margin-bottom:1.25rem;
+  }
+  .searchrow{display:flex; gap:.7rem; flex-wrap:wrap;}
+  .search{
+    position:relative; flex:1 1 260px; min-width:0;
+  }
+  .search::before{
+    content:"🔎"; position:absolute; left:.85rem; top:50%; transform:translateY(-50%);
+    font-size:.95rem; opacity:.75; pointer-events:none;
+  }
+  .search input{
+    width:100%;
+    font:inherit; font-size:1rem; color:var(--ink);
+    background:var(--card); border:1px solid var(--card-edge); border-radius:999px;
+    padding:.7rem 2.4rem .7rem 2.5rem;
+  }
+  .search input::placeholder{color:var(--muted);}
+  .search input:focus-visible{outline:2px solid #6ea8ff; outline-offset:1px;}
+  .search .clear{
+    position:absolute; right:.45rem; top:50%; transform:translateY(-50%);
+    display:none; place-items:center;
+    width:1.8rem; height:1.8rem; border:0; border-radius:50%;
+    background:var(--chip); color:var(--muted); font:inherit; font-size:1rem; cursor:pointer;
+  }
+  .search.has-text .clear{display:grid;}
+  select{
+    font:inherit; font-size:.95rem; color:var(--ink);
+    background:var(--card); border:1px solid var(--card-edge); border-radius:999px;
+    padding:.7rem 1rem; cursor:pointer;
+  }
+  select:focus-visible{outline:2px solid #6ea8ff; outline-offset:1px;}
+  .chips{display:flex; flex-wrap:wrap; gap:.5rem;}
+  .chip{
+    font:inherit; font-size:.9rem; font-weight:600;
+    color:var(--muted); background:var(--chip);
+    border:1px solid var(--card-edge); border-radius:999px;
+    padding:.42rem .95rem; cursor:pointer;
+    transition:background .12s ease, color .12s ease, border-color .12s ease;
+  }
+  .chip:hover{color:var(--ink);}
+  .chip[aria-pressed="true"]{background:var(--chip-on); color:#0b1017; border-color:var(--chip-on);}
+  .chip .n{opacity:.6; font-weight:500; margin-left:.3rem;}
+  .chip:focus-visible{outline:2px solid #6ea8ff; outline-offset:2px;}
+  .count{color:var(--muted); font-size:.9rem;}
+
+  /* ---- grid ---- */
   main{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
@@ -36,6 +88,7 @@
     width:100%; max-width:960px;
   }
   .game{
+    position:relative;
     display:flex; flex-direction:column;
     background:var(--card);
     border:1px solid var(--card-edge);
@@ -48,26 +101,19 @@
     transform:translateY(-4px);
     box-shadow:0 12px 28px rgba(0,0,0,.45);
   }
+  .game[hidden]{display:none;}
   .banner{
     height:130px;
     display:flex; align-items:center; justify-content:center;
     font-size:4rem;
+    background:linear-gradient(160deg, var(--g1,#24404f), var(--g2,#1c2a33) 70%);
   }
-  .monza .banner{background:radial-gradient(circle at 35% 30%, #1c3f2a, #0f2418);}
-  .chicken .banner{background:linear-gradient(160deg, #24404f, #1c2a33 70%);}
-  .voyage .banner{background:linear-gradient(160deg, #6d4ff5, #4527c9 70%);}
-  .blocks .banner{background:linear-gradient(160deg, #7a5fd0, #3b2a6d 70%);}
-  .bible .banner{background:linear-gradient(160deg, #4c6bff, #2b41c9 70%);}
-  .bricks .banner{background:linear-gradient(160deg, #16324a, #0b1020 70%);}
-  .jungle .banner{background:linear-gradient(160deg, #1d5c30, #0a1f14 70%);}
-  .alien .banner{background:linear-gradient(160deg, #2e1c5e, #0b0820 70%);}
-  .beatbugs .banner{background:linear-gradient(160deg, #8fd3ff, #57b95c 72%);}
-  .reel .banner{background:linear-gradient(160deg, #2f9fc4, #08243a 72%);}
-  .critter .banner{background:linear-gradient(160deg, #5ddb7a, #14261b 72%);}
-  .siege .banner{background:linear-gradient(160deg, #5c3350, #241d3a 72%);}
-  .sorting .banner{background:linear-gradient(160deg, #ffd63d, #c9722a 72%);}
-  .turret .banner{background:linear-gradient(160deg, #7fb84a, #4a2f22 72%);}
-  .spire .banner{background:linear-gradient(160deg, #35e0d0, #1a0f3d 55%, #07060f 82%);}
+  .new{
+    position:absolute; top:.75rem; right:.75rem;
+    font-size:.68rem; font-weight:800; letter-spacing:.09em; text-transform:uppercase;
+    background:#eef3f8; color:#0b1017;
+    padding:.25rem .55rem; border-radius:999px;
+  }
   .body{padding:1.1rem 1.25rem 1.4rem; display:flex; flex-direction:column; gap:.55rem; flex:1;}
   .body h2{font-size:1.25rem;}
   .tag{
@@ -81,24 +127,26 @@
     font-weight:700; font-size:.95rem;
     padding:.5rem 1.1rem; border-radius:999px;
     color:#0b1017;
+    background:var(--accent,#ffd93b);
   }
-  .monza .play{background:#f7c531;}
-  .chicken .play{background:#ffce54;}
-  .voyage .play{background:#c9b8ff;}
-  .blocks .play{background:#ffd93b;}
-  .bible .play{background:#ffd43b;}
-  .bricks .play{background:#22d3ee;}
-  .jungle .play{background:#7ef0c0;}
-  .alien .play{background:#7ee081;}
-  .beatbugs .play{background:#ffd23b;}
-  .siege .play{background:#ffc94d;}
-  .reel .play{background:#5ad1ff;}
-  .critter .play{background:#5ddb7a;}
-  .sorting .play{background:#ffd63d;}
-  .turret .play{background:#8bc24a;}
-  .spire .play{background:#35e0d0;}
+
+  .empty{
+    grid-column:1/-1; text-align:center; color:var(--muted);
+    padding:3rem 1rem; line-height:1.6;
+  }
+  .empty button{
+    font:inherit; font-weight:700; margin-top:1rem;
+    background:#eef3f8; color:#0b1017; border:0; border-radius:999px;
+    padding:.55rem 1.2rem; cursor:pointer;
+  }
   footer{margin-top:3rem; color:var(--muted); font-size:.85rem; text-align:center;}
   footer a{color:inherit;}
+  @media (max-width:520px){
+    .searchrow{flex-direction:column;}
+    /* stacked, the 260px basis would apply to the height instead */
+    .search{flex:0 0 auto; width:100%;}
+    select{width:100%;}
+  }
 </style>
 </head>
 <body>
@@ -107,8 +155,47 @@
   <p>Free games to play in your browser — no installs, no ads, just fun.</p>
 </header>
 
-<main>
-  <a class="game monza" href="https://rvenning.github.io/monza/">
+<!--
+  ADDING A GAME: copy one <a class="game"> block, change the data-* attributes,
+  the two colours in the style attribute, and the text. Nothing else on this page
+  needs editing — the filters, counts and "New" badge are all built from the cards.
+
+  data-cat      one of the ids in the CATEGORIES list in the script below
+  data-age      youngest age it suits, as a number (matches the "who's playing" filter)
+  data-players  1, or 2 for anything two or more people can play together
+  data-added    YYYY-MM-DD it went on the hub (drives sorting and the New badge)
+  data-keywords extra words people might search for that aren't in the description
+-->
+
+<div class="controls">
+  <div class="searchrow">
+    <label class="search" id="searchWrap">
+      <input id="q" type="search" placeholder="Search games…  (press /)" autocomplete="off" aria-label="Search games">
+      <button class="clear" type="button" id="clearQ" aria-label="Clear search">×</button>
+    </label>
+    <select id="age" aria-label="Who's playing?">
+      <option value="99">Any age</option>
+      <option value="3">Good for a 3-year-old</option>
+      <option value="5">Good for a 5-year-old</option>
+      <option value="7">Good for a 7-year-old</option>
+      <option value="9">Good for a 9-year-old</option>
+      <option value="13">Teens &amp; grown-ups</option>
+    </select>
+    <select id="sort" aria-label="Sort games">
+      <option value="new">Newest first</option>
+      <option value="old">Oldest first</option>
+      <option value="az">A–Z</option>
+    </select>
+  </div>
+  <div class="chips" id="cats" role="group" aria-label="Filter by kind of game"></div>
+  <p class="count" id="count" role="status" aria-live="polite"></p>
+</div>
+
+<main id="grid">
+  <a class="game" href="https://rvenning.github.io/monza/"
+     data-cat="board" data-age="6" data-players="2" data-added="2026-07-12"
+     data-keywords="dice racing cars race track chequered flag classic tabletop"
+     style="--g1:#1c3f2a;--g2:#0f2418;--accent:#f7c531">
     <div class="banner" aria-hidden="true">🏎️🎲</div>
     <div class="body">
       <span class="tag">2–6 players · Board game</span>
@@ -118,7 +205,10 @@
     </div>
   </a>
 
-  <a class="game chicken" href="https://rvenning.github.io/chicken-cross/">
+  <a class="game" href="https://rvenning.github.io/chicken-cross/"
+     data-cat="action" data-age="5" data-players="1" data-added="2026-07-12"
+     data-keywords="crossy road frogger hopping traffic cars trains rivers"
+     style="--g1:#24404f;--g2:#1c2a33;--accent:#ffce54">
     <div class="banner" aria-hidden="true">🐔🚗</div>
     <div class="body">
       <span class="tag">1 player · Arcade</span>
@@ -128,7 +218,10 @@
     </div>
   </a>
 
-  <a class="game voyage" href="https://rvenning.github.io/wordvoyage/">
+  <a class="game" href="https://rvenning.github.io/wordvoyage/"
+     data-cat="words" data-age="6" data-players="1" data-added="2026-07-12"
+     data-keywords="spelling letters countries travel geography vocabulary anagram"
+     style="--g1:#6d4ff5;--g2:#4527c9;--accent:#c9b8ff">
     <div class="banner" aria-hidden="true">🌍📜</div>
     <div class="body">
       <span class="tag">1 player · Word puzzle</span>
@@ -138,7 +231,10 @@
     </div>
   </a>
 
-  <a class="game blocks" href="https://rvenning.github.io/block-party/">
+  <a class="game" href="https://rvenning.github.io/block-party/"
+     data-cat="puzzle" data-age="3" data-players="1" data-added="2026-07-12"
+     data-keywords="tetris blocks shapes drag toddler preschool relaxing no timer"
+     style="--g1:#7a5fd0;--g2:#3b2a6d;--accent:#ffd93b">
     <div class="banner" aria-hidden="true">🟥🟨🟩</div>
     <div class="body">
       <span class="tag">1 player · Puzzle · Ages 3+</span>
@@ -148,7 +244,10 @@
     </div>
   </a>
 
-  <a class="game bible" href="https://rvenning.github.io/bible-quest/">
+  <a class="game" href="https://rvenning.github.io/bible-quest/"
+     data-cat="quiz" data-age="6" data-players="1" data-added="2026-07-13"
+     data-keywords="bible stories scripture christian trivia questions quiz learning"
+     style="--g1:#4c6bff;--g2:#2b41c9;--accent:#ffd43b">
     <div class="banner" aria-hidden="true">📖✨</div>
     <div class="body">
       <span class="tag">1 player · Trivia · Ages 6+</span>
@@ -158,7 +257,10 @@
     </div>
   </a>
 
-  <a class="game bricks" href="https://rvenning.github.io/brick-breaker/">
+  <a class="game" href="https://rvenning.github.io/brick-breaker/"
+     data-cat="action" data-age="6" data-players="1" data-added="2026-07-17"
+     data-keywords="breakout arkanoid paddle ball bricks power-ups bosses neon upgrades"
+     style="--g1:#16324a;--g2:#0b1020;--accent:#22d3ee">
     <div class="banner" aria-hidden="true">🧱🕹️</div>
     <div class="body">
       <span class="tag">1 player · Arcade · Ages 6+</span>
@@ -168,7 +270,10 @@
     </div>
   </a>
 
-  <a class="game jungle" href="https://rvenning.github.io/deep-jungle/">
+  <a class="game" href="https://rvenning.github.io/deep-jungle/"
+     data-cat="action" data-age="6" data-players="1" data-added="2026-07-18"
+     data-keywords="platformer jumping exploring caves treasure adventure gear secrets"
+     style="--g1:#1d5c30;--g2:#0a1f14;--accent:#7ef0c0">
     <div class="banner" aria-hidden="true">🌿🗿</div>
     <div class="body">
       <span class="tag">1 player · Platformer · Ages 6+</span>
@@ -178,7 +283,10 @@
     </div>
   </a>
 
-  <a class="game alien" href="https://rvenning.github.io/alien-chomp/">
+  <a class="game" href="https://rvenning.github.io/alien-chomp/"
+     data-cat="action" data-age="6" data-players="1" data-added="2026-07-24"
+     data-keywords="endless runner aliens space eating chasing high score"
+     style="--g1:#2e1c5e;--g2:#0b0820;--accent:#7ee081">
     <div class="banner" aria-hidden="true">👽🏃</div>
     <div class="body">
       <span class="tag">1 player · Endless runner · Ages 6+</span>
@@ -188,7 +296,10 @@
     </div>
   </a>
 
-  <a class="game beatbugs" href="https://rvenning.github.io/beat-bugs/">
+  <a class="game" href="https://rvenning.github.io/beat-bugs/"
+     data-cat="music" data-age="3" data-players="1" data-added="2026-07-25"
+     data-keywords="rhythm music songs tapping dancing preschool toddler no losing"
+     style="--g1:#8fd3ff;--g2:#57b95c;--accent:#ffd23b">
     <div class="banner" aria-hidden="true">🐞🎵</div>
     <div class="body">
       <span class="tag">1 player · Rhythm · Ages 3+</span>
@@ -198,7 +309,10 @@
     </div>
   </a>
 
-  <a class="game reel" href="https://rvenning.github.io/reel-rush/">
+  <a class="game" href="https://rvenning.github.io/reel-rush/"
+     data-cat="action" data-age="6" data-players="1" data-added="2026-07-25"
+     data-keywords="fishing ocean sea sharks reeling boat deep diving"
+     style="--g1:#2f9fc4;--g2:#08243a;--accent:#5ad1ff">
     <div class="banner" aria-hidden="true">🎣🐟</div>
     <div class="body">
       <span class="tag">1 player · Arcade · Ages 6+</span>
@@ -208,7 +322,10 @@
     </div>
   </a>
 
-  <a class="game critter" href="https://rvenning.github.io/critter-clash/">
+  <a class="game" href="https://rvenning.github.io/critter-clash/"
+     data-cat="strategy" data-age="7" data-players="2" data-added="2026-07-26"
+     data-keywords="turn based tactics grid battle two player hot seat bugs garden"
+     style="--g1:#5ddb7a;--g2:#14261b;--accent:#5ddb7a">
     <div class="banner" aria-hidden="true">🐸⚔️🪲</div>
     <div class="body">
       <span class="tag">1–2 players · Tactics · Ages 7+</span>
@@ -218,7 +335,10 @@
     </div>
   </a>
 
-  <a class="game siege" href="https://rvenning.github.io/word-siege/">
+  <a class="game" href="https://rvenning.github.io/word-siege/"
+     data-cat="words" data-age="7" data-players="1" data-added="2026-07-26"
+     data-keywords="hangman spelling letters guessing castle knights medieval vocabulary"
+     style="--g1:#5c3350;--g2:#241d3a;--accent:#ffc94d">
     <div class="banner" aria-hidden="true">🏰📜</div>
     <div class="body">
       <span class="tag">1 player · Word puzzle · Ages 7+</span>
@@ -228,7 +348,10 @@
     </div>
   </a>
 
-  <a class="game sorting" href="https://rvenning.github.io/sorting-office/">
+  <a class="game" href="https://rvenning.github.io/sorting-office/"
+     data-cat="puzzle" data-age="5" data-players="1" data-added="2026-07-30"
+     data-keywords="sorting shapes colours counting matching parcels post office learning no timer"
+     style="--g1:#ffd63d;--g2:#c9722a;--accent:#ffd63d">
     <div class="banner" aria-hidden="true">📦🔔</div>
     <div class="body">
       <span class="tag">1 player · Sorting puzzle · Ages 5+</span>
@@ -238,7 +361,10 @@
     </div>
   </a>
 
-  <a class="game turret" href="https://rvenning.github.io/turret-town/">
+  <a class="game" href="https://rvenning.github.io/turret-town/"
+     data-cat="strategy" data-age="8" data-players="1" data-added="2026-08-01"
+     data-keywords="tower defence defense strategy waves monsters building maps siege"
+     style="--g1:#7fb84a;--g2:#4a2f22;--accent:#8bc24a">
     <div class="banner" aria-hidden="true">🏰🏹</div>
     <div class="body">
       <span class="tag">1 player · Tower defence · Ages 8+</span>
@@ -248,7 +374,10 @@
     </div>
   </a>
 
-  <a class="game spire" href="https://rvenning.github.io/ricochet-spire/">
+  <a class="game" href="https://rvenning.github.io/ricochet-spire/"
+     data-cat="strategy" data-age="13" data-players="1" data-added="2026-08-01"
+     data-keywords="roguelike deckbuilder cards slay the spire breakout runs daily challenge grown ups"
+     style="--g1:#35e0d0;--g2:#1a0f3d;--accent:#35e0d0">
     <div class="banner" aria-hidden="true">🔺🃏</div>
     <div class="body">
       <span class="tag">1 player · Roguelite · Ages 13+</span>
@@ -262,5 +391,171 @@
 <footer>
   Made with ❤️ by the Venning family · <a href="https://github.com/rvenning">GitHub</a>
 </footer>
+
+<script>
+(function(){
+  // Category ids must match the data-cat on the cards. Add one here and the
+  // chip, the count and the filtering all come along for free.
+  var CATEGORIES = [
+    { id:'action',   label:'Action & arcade' },
+    { id:'puzzle',   label:'Puzzles' },
+    { id:'words',    label:'Word games' },
+    { id:'strategy', label:'Strategy' },
+    { id:'music',    label:'Music' },
+    { id:'quiz',     label:'Quiz' },
+    { id:'board',    label:'Board games' }
+  ];
+  var NEW_DAYS = 30; // a card only counts as new for this long
+  var MAX_NEW  = 3;  // ...and only the newest few ever wear the badge
+
+  var grid  = document.getElementById('grid');
+  var cards = [].slice.call(grid.querySelectorAll('.game'));
+  var qEl   = document.getElementById('q');
+  var qWrap = document.getElementById('searchWrap');
+  var ageEl = document.getElementById('age');
+  var sortEl= document.getElementById('sort');
+  var catsEl= document.getElementById('cats');
+  var countEl = document.getElementById('count');
+
+  // Index each card once: everything the search looks at, lower-cased.
+  var items = cards.map(function(el){
+    var title = el.querySelector('h2').textContent;
+    return {
+      el: el,
+      title: title,
+      cat: el.dataset.cat || '',
+      age: +el.dataset.age || 0,
+      players: +el.dataset.players || 1,
+      added: el.dataset.added || '',
+      text: [
+        title,
+        el.querySelector('.tag').textContent,
+        el.querySelector('.body p').textContent,
+        el.dataset.keywords || '',
+        (CATEGORIES.filter(function(c){ return c.id === el.dataset.cat; })[0] || {}).label || ''
+      ].join(' ').toLowerCase()
+    };
+  });
+
+  // "New" badge: the MAX_NEW most recent cards, as long as they're still within
+  // NEW_DAYS of today. Ties on the same date come along together, so shipping two
+  // games in one day never badges just one of them.
+  var cutoff = new Date(Date.now() - NEW_DAYS * 864e5).toISOString().slice(0, 10);
+  items.slice()
+    .sort(function(a, b){ return b.added.localeCompare(a.added); })
+    .forEach(function(i, idx, sorted){
+      if (i.added < cutoff) return;
+      if (idx >= MAX_NEW && i.added !== sorted[MAX_NEW - 1].added) return;
+      var b = document.createElement('span');
+      b.className = 'new';
+      b.textContent = 'New';
+      i.el.appendChild(b);
+    });
+
+  // Chips: All, the categories that are actually used, then Multiplayer.
+  var state = { q:'', cat:'all', age:99, multi:false, sort:'new' };
+  var used = {};
+  items.forEach(function(i){ used[i.cat] = (used[i.cat] || 0) + 1; });
+
+  function chip(label, n, pressed){
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'chip';
+    b.setAttribute('aria-pressed', pressed ? 'true' : 'false');
+    b.innerHTML = label + (n != null ? ' <span class="n">' + n + '</span>' : '');
+    catsEl.appendChild(b);
+    return b;
+  }
+
+  var catChips = [];
+  catChips.push({ id:'all', el: chip('All games', items.length, true) });
+  CATEGORIES.forEach(function(c){
+    if (!used[c.id]) return;
+    catChips.push({ id:c.id, el: chip(c.label, used[c.id], false) });
+  });
+  catChips.forEach(function(c){
+    c.el.addEventListener('click', function(){
+      state.cat = c.id;
+      catChips.forEach(function(o){ o.el.setAttribute('aria-pressed', String(o === c)); });
+      apply();
+    });
+  });
+
+  var multiChip = chip('👪 2+ players', items.filter(function(i){ return i.players > 1; }).length, false);
+  multiChip.addEventListener('click', function(){
+    state.multi = !state.multi;
+    multiChip.setAttribute('aria-pressed', String(state.multi));
+    apply();
+  });
+
+  var empty = document.createElement('p');
+  empty.className = 'empty';
+  empty.hidden = true;
+  empty.innerHTML = 'No games match that.<br><button type="button">Show all games</button>';
+  empty.querySelector('button').addEventListener('click', reset);
+  grid.appendChild(empty);
+
+  function matches(i){
+    if (state.cat !== 'all' && i.cat !== state.cat) return false;
+    if (i.age > state.age) return false;
+    if (state.multi && i.players < 2) return false;
+    if (!state.q) return true;
+    // every word typed has to appear somewhere in the card
+    return state.q.split(/\s+/).every(function(w){ return i.text.indexOf(w) !== -1; });
+  }
+
+  function apply(){
+    var shown = 0;
+    items.forEach(function(i){
+      var ok = matches(i);
+      i.el.hidden = !ok;
+      if (ok) shown++;
+    });
+
+    var order = items.slice().sort(function(a, b){
+      if (state.sort === 'az')  return a.title.localeCompare(b.title);
+      if (state.sort === 'old') return a.added.localeCompare(b.added) || a.title.localeCompare(b.title);
+      return b.added.localeCompare(a.added) || a.title.localeCompare(b.title);
+    });
+    order.forEach(function(i){ grid.appendChild(i.el); });
+    grid.appendChild(empty);
+
+    empty.hidden = shown > 0;
+    countEl.textContent = shown === items.length
+      ? items.length + ' games'
+      : shown + ' of ' + items.length + ' games';
+    qWrap.classList.toggle('has-text', !!qEl.value);
+  }
+
+  function reset(){
+    state.q = ''; state.cat = 'all'; state.age = 99; state.multi = false;
+    qEl.value = ''; ageEl.value = '99';
+    catChips.forEach(function(o){ o.el.setAttribute('aria-pressed', String(o.id === 'all')); });
+    multiChip.setAttribute('aria-pressed', 'false');
+    apply();
+    qEl.focus();
+  }
+
+  qEl.addEventListener('input', function(){
+    state.q = qEl.value.trim().toLowerCase();
+    apply();
+  });
+  document.getElementById('clearQ').addEventListener('click', function(e){
+    e.preventDefault();
+    qEl.value = ''; state.q = ''; apply(); qEl.focus();
+  });
+  ageEl.addEventListener('change', function(){ state.age = +ageEl.value; apply(); });
+  sortEl.addEventListener('change', function(){ state.sort = sortEl.value; apply(); });
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === '/' && document.activeElement !== qEl) { e.preventDefault(); qEl.focus(); }
+    else if (e.key === 'Escape' && document.activeElement === qEl && qEl.value) {
+      qEl.value = ''; state.q = ''; apply();
+    }
+  });
+
+  apply();
+})();
+</script>
 </body>
 </html>
