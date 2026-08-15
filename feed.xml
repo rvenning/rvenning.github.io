@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Venning Family Games</title>
+  <subtitle>New games and updates on the family games hub.</subtitle>
+  <id>tag:rvenning.github.io,2026:games-hub</id>
+  <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
+  <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
+  <author><name>The Venning family</name></author>
+  <updated>2026-08-13T09:00:00Z</updated>
+
+  <!--
+    POSTING AN UPDATE
+
+    This file is the only place updates are written down. It feeds the "What's
+    new" panel on the hub, anyone's RSS reader, and the wording of the email
+    that goes out.
+
+    1. Copy the newest entry's timestamp up into the <updated> just above.
+       Readers use that one to decide whether to look again, so an entry added
+       under a stale timestamp can go unnoticed.
+    2. Copy an <entry> block, paste it directly under this comment so the
+       newest is first, and fill in the four things below.
+    3. If it is a brand new game, add the card to index.html too.
+
+       id       tag:rvenning.github.io,YYYY-MM-DD:short-slug
+                Never reuse one, never change one after it has gone out. It is
+                how a reader knows it has already shown this to someone. Two
+                updates about the same game need two different slugs.
+       updated  A full timestamp ending in Z, like 2026-08-13T09:00:00Z.
+                A bare date like 2026-08-13 is not valid and some readers will
+                drop the entry without telling anyone. Posting twice in one
+                day? Give the later one a later time.
+       link     Where it points, usually the game.
+       summary  Plain words, a sentence or two. No HTML in here.
+
+    Type the characters you mean. Only two need care: write &amp; where you
+    want an ampersand and &lt; where you want a less-than sign. Em dashes,
+    curly quotes and emoji go in exactly as they are. Names like &nbsp; and
+    &mdash; are not allowed in this file at all and will break the whole feed.
+    Inside a comment like this one, never put two hyphens next to each other.
+  -->
+
+  <entry>
+    <title>Wonder Museum</title>
+    <id>tag:rvenning.github.io,2026-08-13:wonder-museum</id>
+    <updated>2026-08-13T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/wonder-museum/"/>
+    <summary>A word search with a museum wrapped round it. Fourteen wings and a hundred and twelve rooms, and every room you finish puts a real exhibit in your album with a fact on the back of it. There is a Daily Puzzle the whole family plays on the same grid.</summary>
+  </entry>
+
+  <entry>
+    <title>Number Ninja</title>
+    <id>tag:rvenning.github.io,2026-08-12:number-ninja</id>
+    <updated>2026-08-12T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/number-ninja/"/>
+    <summary>Numbers fly up from the dojo floor: slice the right ones and let the rest fall. Twelve belts take the 2 to 12 times tables one at a time and then all at once, and the wrong answers are the ones people actually give, so nothing can be guessed by eye.</summary>
+  </entry>
+
+  <entry>
+    <title>Canary Deep</title>
+    <id>tag:rvenning.github.io,2026-08-09:canary-deep</id>
+    <updated>2026-08-09T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/canary-deep/"/>
+    <summary>Minesweeper, a thousand feet down a coal mine, and no board here ever needs a guess. A solver plays every board through first, and any that would come down to a coin toss is thrown away. Eighteen shifts down three seams, plus a Daily Seam on the same board for everyone.</summary>
+  </entry>
+
+  <entry>
+    <title>Scribble Speedway</title>
+    <id>tag:rvenning.github.io,2026-08-08:scribble-speedway</id>
+    <updated>2026-08-08T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/scribble-speedway/"/>
+    <summary>Draw a racetrack with your finger and the game turns your scribble into a real circuit, then puts seven rivals on it. Eighteen challenges across four chapters, and a Daily Circuit where the whole family gets the same field and each draws their own way round it.</summary>
+  </entry>
+
+  <entry>
+    <title>Rocket Rescue</title>
+    <id>tag:rvenning.github.io,2026-08-06:rocket-rescue</id>
+    <updated>2026-08-06T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/rocket-rescue/"/>
+    <summary>Little creatures are stranded down in the caves and you have the only ship small enough to reach them. Twenty caves across four worlds, each ending somewhere a Guardian lives, plus Deep Rescue: one endless cave a day, the same one for everybody.</summary>
+  </entry>
+
+  <entry>
+    <title>Turret Town</title>
+    <id>tag:rvenning.github.io,2026-08-01:turret-town</id>
+    <updated>2026-08-01T09:05:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/turret-town/"/>
+    <summary>They are coming up the road. Build something. Archer Posts, Bomb Lobbers, Frost Fans, Tesla Coils and Watchtowers against armour, flyers and splitters. 15 maps, three bosses, an armoury, and an endless Long Siege for the rest of us to chase.</summary>
+  </entry>
+
+  <entry>
+    <title>Ricochet Spire</title>
+    <id>tag:rvenning.github.io,2026-08-01:ricochet-spire</id>
+    <updated>2026-08-01T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/ricochet-spire/"/>
+    <summary>Slay the Spire meets Breakout. Bounce a ball, break some bricks, then start drafting cards and watch it turn into something else. A branching map of battles, elites, shops, campfires and bosses, and a Daily Challenge on one seed a day. Aimed at teens and grown-ups.</summary>
+  </entry>
+
+  <entry>
+    <title>Sorting Office</title>
+    <id>tag:rvenning.github.io,2026-07-30:sorting-office</id>
+    <updated>2026-07-30T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/sorting-office/"/>
+    <summary>Every parcel has a box: find it. Sort by shape, then colour, then two things at once, then by counting stamps, then by reading the label. Then the bell rings, the rule changes and every box swaps its label. No timer and nothing to lose.</summary>
+  </entry>
+
+  <entry>
+    <title>Critter Clash</title>
+    <id>tag:rvenning.github.io,2026-07-26:critter-clash</id>
+    <updated>2026-07-26T09:05:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/critter-clash/"/>
+    <summary>Take your turn, there is no clock. Lead three critters against the bugs across 20 levels and three bosses, and use the garden against them: bugs cannot swim, so one good shove into the pond beats three hits. Two of you can play on one iPad.</summary>
+  </entry>
+
+  <entry>
+    <title>Word Siege</title>
+    <id>tag:rvenning.github.io,2026-07-26:word-siege</id>
+    <updated>2026-07-26T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/word-siege/"/>
+    <summary>Hangman with a castle instead of a gallows. Every miss is a boulder through your wall, and the wall has to last the whole siege, not just one word. 18 sieges, six realms, 144 words with clues, and an armoury to spend your coins in.</summary>
+  </entry>
+
+  <entry>
+    <title>Beat Bugs</title>
+    <id>tag:rvenning.github.io,2026-07-25:beat-bugs</id>
+    <updated>2026-07-25T09:05:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/beat-bugs/"/>
+    <summary>Tap the bugs in time with the music and watch them dance. Twelve cheerful songs from gentle two-lane tunes to fast four-lane raves. No timers and no losing, just stars to earn and more songs to unlock.</summary>
+  </entry>
+
+  <entry>
+    <title>Reel Rush</title>
+    <id>tag:rvenning.github.io,2026-07-25:reel-rush</id>
+    <updated>2026-07-25T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/reel-rush/"/>
+    <summary>You have hooked a fish deep in the ocean, now reel it up to the boat. Hold to reel, slide to steer past sharks and sea mines, and stay ahead of the deep shark rising below. Land it and the next cast goes deeper for a bigger catch.</summary>
+  </entry>
+
+  <entry>
+    <title>Alien Chomp</title>
+    <id>tag:rvenning.github.io,2026-07-24:alien-chomp</id>
+    <updated>2026-07-24T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/alien-chomp/"/>
+    <summary>You are a starving alien loose in the city. Eat every human you can to keep your hunger up, but never bite a robot. Jump, dive-slam and chomp your way from the suburbs to the spaceport.</summary>
+  </entry>
+
+  <entry>
+    <title>Deep Jungle</title>
+    <id>tag:rvenning.github.io,2026-07-18:deep-jungle</id>
+    <updated>2026-07-18T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/deep-jungle/"/>
+    <summary>Run, jump and swim through 6 jungle worlds hunting a lost city of gold. Find secret passages, unlock explorer gear and beat the boss of every world.</summary>
+  </entry>
+
+  <entry>
+    <title>Brick Breaker DX</title>
+    <id>tag:rvenning.github.io,2026-07-17:brick-breaker</id>
+    <updated>2026-07-17T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/brick-breaker/"/>
+    <summary>Smash neon bricks, catch power-ups and battle bosses across a 30-level campaign. Earn coins, buy upgrades and chase the family high score.</summary>
+  </entry>
+
+  <entry>
+    <title>Bible Quest</title>
+    <id>tag:rvenning.github.io,2026-07-13:bible-quest</id>
+    <updated>2026-07-13T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/bible-quest/"/>
+    <summary>Journey through 17 Bible stories, from Creation to the Early Church. Answer multiple-choice questions, earn stars and unlock the next story.</summary>
+  </entry>
+
+  <entry>
+    <title>Monza</title>
+    <id>tag:rvenning.github.io,2026-07-12:monza</id>
+    <updated>2026-07-12T09:15:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/monza/"/>
+    <summary>The classic racing dice board game, rebuilt for the web. Roll the coloured dice and steer your car around the track to the chequered flag. Two to six players.</summary>
+  </entry>
+
+  <entry>
+    <title>Chicken Cross</title>
+    <id>tag:rvenning.github.io,2026-07-12:chicken-cross</id>
+    <updated>2026-07-12T09:10:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/chicken-cross/"/>
+    <summary>Hop your chicken across busy roads, rushing rivers and railway lines. How far can you get before the traffic gets you?</summary>
+  </entry>
+
+  <entry>
+    <title>WordVoyage</title>
+    <id>tag:rvenning.github.io,2026-07-12:wordvoyage</id>
+    <updated>2026-07-12T09:05:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/wordvoyage/"/>
+    <summary>A word puzzle adventure around the globe. Solve puzzles, collect stars and voyage from country to country.</summary>
+  </entry>
+
+  <entry>
+    <title>Block Party</title>
+    <id>tag:rvenning.github.io,2026-07-12:block-party</id>
+    <updated>2026-07-12T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/block-party/"/>
+    <summary>Drag the blocks, fill a line, make it sparkle. A gentle block puzzle made for little hands: no timer, no losing, lots of confetti.</summary>
+  </entry>
+
+</feed>
