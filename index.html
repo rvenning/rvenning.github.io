@@ -143,7 +143,7 @@
   /* ---- what's new + subscribe ---- */
   .updates{
     width:100%; max-width:960px;
-    margin-top:3rem;
+    margin-bottom:2.25rem;
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
     gap:1.5rem;
@@ -212,6 +212,46 @@
 </header>
 
 <!--
+  POSTING AN UPDATE: add one <entry> to feed.xml. That file is the only place
+  updates are written down — it fills the panel below, anyone's RSS reader, and
+  the wording of the email that goes out. Nothing in this section needs editing.
+-->
+
+<section class="updates">
+  <div class="panel" id="newsPanel" hidden>
+    <h2>What's new</h2>
+    <ul class="news" id="newsList"></ul>
+    <p class="fine newsfoot">
+      <a href="/feed.xml">RSS feed</a> ·
+      <a href="https://buttondown.com/rvenning/archive/">Past updates</a>
+    </p>
+  </div>
+
+  <div class="panel">
+    <h2>Get an email when there's a new game</h2>
+    <p>A short note whenever something goes up. A few times a month at most.</p>
+    <form id="subForm" method="post" target="_blank"
+          action="https://buttondown.com/api/emails/embed-subscribe/rvenning">
+      <div class="subrow">
+        <input id="subEmail" name="email" type="email" required
+               autocomplete="email" inputmode="email"
+               placeholder="you@example.com"
+               aria-label="Your email address"
+               aria-describedby="subStatus subFine">
+        <button type="submit" id="subBtn">Subscribe</button>
+      </div>
+      <p class="substatus" id="subStatus" role="status" aria-live="polite"></p>
+      <p class="fine" id="subFine">
+        We send one email to check it's really you — nothing else until you click the
+        link in it. Your address goes to Buttondown, who send these for us; it isn't
+        used for anything else and it isn't shared. Every email has an unsubscribe
+        link. Kids, ask a grown-up first.
+      </p>
+    </form>
+  </div>
+</section>
+
+<!--
   ADDING A GAME: copy one <a class="game"> block, change the data-* attributes,
   the two colours in the style attribute, and the text. Nothing else on this page
   needs editing — the filters, counts and "New" badge are all built from the cards.
@@ -223,7 +263,7 @@
   data-keywords extra words people might search for that aren't in the description
 
   Then add a matching <entry> to feed.xml, so the new game reaches anyone
-  subscribed and shows up in "What's new" below. That file explains itself at
+  subscribed and shows up in "What's new" above. That file explains itself at
   the top. Forgetting it breaks nothing — the card still ships, the feed is
   just quiet about it.
 -->
@@ -513,46 +553,6 @@
     </div>
   </a>
 </main>
-
-<!--
-  POSTING AN UPDATE: add one <entry> to feed.xml. That file is the only place
-  updates are written down — it fills the panel below, anyone's RSS reader, and
-  the wording of the email that goes out. Nothing in this section needs editing.
--->
-
-<section class="updates">
-  <div class="panel" id="newsPanel" hidden>
-    <h2>What's new</h2>
-    <ul class="news" id="newsList"></ul>
-    <p class="fine newsfoot">
-      <a href="/feed.xml">RSS feed</a> ·
-      <a href="https://buttondown.com/rvenning/archive/">Past updates</a>
-    </p>
-  </div>
-
-  <div class="panel">
-    <h2>Get an email when there's a new game</h2>
-    <p>A short note whenever something goes up. A few times a month at most.</p>
-    <form id="subForm" method="post" target="_blank"
-          action="https://buttondown.com/api/emails/embed-subscribe/rvenning">
-      <div class="subrow">
-        <input id="subEmail" name="email" type="email" required
-               autocomplete="email" inputmode="email"
-               placeholder="you@example.com"
-               aria-label="Your email address"
-               aria-describedby="subStatus subFine">
-        <button type="submit" id="subBtn">Subscribe</button>
-      </div>
-      <p class="substatus" id="subStatus" role="status" aria-live="polite"></p>
-      <p class="fine" id="subFine">
-        We send one email to check it's really you — nothing else until you click the
-        link in it. Your address goes to Buttondown, who send these for us; it isn't
-        used for anything else and it isn't shared. Every email has an unsubscribe
-        link. Kids, ask a grown-up first.
-      </p>
-    </form>
-  </div>
-</section>
 
 <footer>
   Made with ❤️ by the Venning family · <a href="https://github.com/rvenning">GitHub</a>
