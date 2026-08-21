@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-08-21T11:30:00Z</updated>
+  <updated>2026-08-22T09:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Cookie Crumble, rebuilt</title>
+    <id>tag:rvenning.github.io,2026-08-22:cookie-crumble-tearoom</id>
+    <updated>2026-08-22T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/cookie-crumble/"/>
+    <summary>Cookie Crumble is a completely different game from the one that went up yesterday. It is not a cookie production line any more — it is a village tearoom floor, with an owl for a waitress. Show people to a table, take the order, put the urn and the oven on, load your tray at the pass and get it out before anybody gives up waiting. Every job is one tap; what costs you is that you have to walk there and can only be in one place. Eight animal regulars each break your routine in exactly one way, and there is an endless Saturday Rush for the leaderboard.</summary>
+  </entry>
 
   <entry>
     <title>Cookie Crumble</title>
