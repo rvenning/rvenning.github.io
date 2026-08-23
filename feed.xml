@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-08-22T09:00:00Z</updated>
+  <updated>2026-08-23T09:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Updraft</title>
+    <id>tag:rvenning.github.io,2026-08-23:updraft</id>
+    <updated>2026-08-23T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/updraft/"/>
+    <summary>A hot-air balloon game where you cannot steer. You have a burner and a vent, so up and down is all you control — everything sideways is decided by which of six winds you are sitting in, and they all blow different ways. The whole stack is on screen at once, because picking a layer is the game. The top wind is fastest and the air is thin enough up there that the burner drinks gas at double the rate. Rising columns lift you for free. Drop a sandbag and you leap upward, and you will never dive as fast again. Birds tear the envelope, and every tear makes it cool quicker for the rest of the flight. Twenty flights over meadows, chalk downs, a storm coast and a mountain pass, plus a Long Drift that makes one endless sky a day — the same sky for everyone in the house.</summary>
+  </entry>
 
   <entry>
     <title>Cookie Crumble, rebuilt</title>
