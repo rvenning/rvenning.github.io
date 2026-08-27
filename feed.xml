@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-08-23T09:00:00Z</updated>
+  <updated>2026-08-27T09:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Curio Cabinet</title>
+    <id>tag:rvenning.github.io,2026-08-27:curio-cabinet</id>
+    <updated>2026-08-27T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/curio-cabinet/"/>
+    <summary>The oldest game there is: turn over two cards, and if they match they stay open. Twenty-five halls across five wings, and each wing starts on a smaller board than the last one finished — because the difficulty comes from the cards rather than the size. Friendly animals to begin with, then shells and pressed flowers, then a Star Room where nearly everything is small and round and glowing, then a workshop of identical brass, and finally a Reading Room of numbers and capital letters with nothing to picture at all. Every board flashes face-up for a moment before the clock starts, and the look gets shorter the deeper you go. Stars come from misses rather than from the clock. Time Attack starts on thirty seconds and grows the board every time you clear it, and there is a two-player game for one table, where finding a pair means you go again.</summary>
+  </entry>
 
   <entry>
     <title>Updraft</title>
