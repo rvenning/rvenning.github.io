@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-08-27T09:00:00Z</updated>
+  <updated>2026-08-28T09:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Tiny Rex</title>
+    <id>tag:rvenning.github.io,2026-08-28:tiny-rex</id>
+    <updated>2026-08-28T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/tiny-rex/"/>
+    <summary>You hatch tiny, and there is one question in the whole game: is that smaller than me? Eat it if it is, keep away if it is not, and anything exactly your own size is completely safe. Fill your belly and you grow a size, and everything you spent the last minute running from turns into dinner. Twenty hunts across four valleys, each ending on a named beast that hunts you until you out-grow it and then bolts. Stars come from your hearts and never from the clock, so you can take as long as you like. Plus the Endless Feast for the family leaderboard, and a Dino Book that fills in as you meet things.</summary>
+  </entry>
 
   <entry>
     <title>Curio Cabinet</title>
