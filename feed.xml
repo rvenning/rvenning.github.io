@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-04T09:00:00Z</updated>
+  <updated>2026-09-05T09:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Math Invaders</title>
+    <id>tag:rvenning.github.io,2026-09-05:math-invaders</id>
+    <updated>2026-09-05T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/math-invaders/"/>
+    <summary>A wall of aliens is coming down, and every one of them is carrying a sum. Type an answer and the cannon fires at whichever alien that answer belongs to — so it isn't "solve this question", it's fifteen questions at once and a decision about which ones you can afford to leave. The maths you skip keeps coming, and the row you kept putting off is the one that reaches the line. Eighteen sectors run from 5 + 3 to (9 + 7) × 4, adding two-digit sums, every times table, division, negatives, powers and brackets one at a time. Get one wrong and it doesn't just buzz: the game works out which alien you meant from the mistake you made — a row out, a dropped carry, a lost minus sign, a bracket ignored — lights that one up with its answer and names what went wrong, for the cost of your chain and a moment rather than a life. Power-up pods drift down carrying little sums of their own, and answering one banks a Freeze, a Smart Bomb or a Shield to spend when you choose. Seventeen medals unlock eight ships and six skies, nothing anywhere can be bought, and Classic — endless, on Cadet, Pilot or Ace — is where the family leaderboard lives. Built for Rosalie and up, and a real game for grown-ups too.</summary>
+  </entry>
 
   <entry>
     <title>Brick Breaker DX — twice the game</title>
