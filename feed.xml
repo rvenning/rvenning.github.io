@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-08-31T09:00:00Z</updated>
+  <updated>2026-09-04T09:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Brick Breaker DX — twice the game</title>
+    <id>tag:rvenning.github.io,2026-09-04:brick-breaker-worlds-4-5</id>
+    <updated>2026-09-04T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/brick-breaker/"/>
+    <summary>The campaign runs to fifty levels now instead of thirty, and the two new worlds bring bricks that do not sit still. Circuit City has turrets that shoot back at your paddle, sliders that creep along their row, chainlinks that all take a hit when one of them breaks, and regenerators that heal themselves if you leave them alone. The Void adds ghost bricks that fade out on a cycle, so the ball goes straight through one that is not quite there. Two new bosses at the end of each: a Mainframe whose weak spots keep swapping sockets, and the Void Eye, which sheds its armour, then its tentacles, and then simply pulls your ball toward it. The three menu tiles that said "Coming soon" since the start now work — Endless waves that never stop, a Daily Challenge that is the same run for everybody who plays it that day, and a Boss Rush against all five bosses on a single set of lives. Thirteen upgrades in the shop rather than seven, twenty-seven badges to collect, and Laser Start now gives four seconds instead of eight, because eight was making levels too easy.</summary>
+  </entry>
 
   <entry>
     <title>Bramble Brigade</title>
