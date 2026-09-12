@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-12T21:00:00Z</updated>
+  <updated>2026-09-13T09:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Chicken Cross — all twelve birds, redrawn</title>
+    <id>tag:rvenning.github.io,2026-09-13:chicken-cross-twelve-birds</id>
+    <updated>2026-09-13T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/chicken-cross/"/>
+    <summary>Redrawing the flamingo last week had an awkward side effect: it made the other eleven birds look like what they were. Underneath, every one of them was the same chicken with something bolted on — the duck was a chicken with a green head, the swan was a chicken with a black mask, the penguin was a chicken painted dark. They have all been drawn again from scratch, each with its own shape rather than its own colour. The duck is long and low with a broad flat bill and webbed feet. The penguin stands upright like a skittle with its flippers down its sides and its heels out in front. The owl is mostly face. The rooster has three green sickle feathers arching over his back, the parrot has a hooked beak and a tail that hangs past its feet, the peacock has a fan with proper eyes on it, and the swan has a long thick neck and the black knob over its bill that tells it from a goose. Nothing about the game has changed — same forty levels, same traffic, same trains, same scores — and every bird is careful to stay short enough that it never hides the lane you are about to cross.</summary>
+  </entry>
 
   <entry>
     <title>Block Party — somewhere for the party to happen</title>
