@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-12T14:00:00Z</updated>
+  <updated>2026-09-12T18:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Chicken Cross — ten worlds that look like ten places</title>
+    <id>tag:rvenning.github.io,2026-09-12:chicken-cross-redrawn</id>
+    <updated>2026-09-12T18:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/chicken-cross/"/>
+    <summary>Chicken Cross has not changed — every level, every car, every train, every coin and every star you have already earned is exactly where you left it. It has been redrawn. The ten worlds used to be the same place in different colours: the same green tree stood on the snow, on the sand and on the volcano. Now each one has its own ground and its own things growing on it — snow-capped firs and blocks of ice, cacti and layered sandstone, palms, poplars, clipped city trees with bollards beside them, and burnt stumps on ash with cracks that glow orange. Trucks have a cab and a box instead of being long cars, logs have end grain, the train is an engine pulling two carriages, and the cars at night throw their headlights down the road ahead. Three things that used to happen in complete silence now show you something: landing a hop kicks up dust in the colour of whatever you landed on, taking a coin leaves a ghost of the coin behind, and — the important one — when the camera is creeping up behind you the bottom of the screen now warns you, which is the only death in the game you used to get no warning about at all. There is a proper menu and button system, the title screen draws whichever bird you play as, and anyone who has asked their device for less movement gets a world that holds still.</summary>
+  </entry>
 
   <entry>
     <title>Chicken Cross — the flamingo is a flamingo now</title>
