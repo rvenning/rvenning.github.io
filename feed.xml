@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-12T18:00:00Z</updated>
+  <updated>2026-09-12T21:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Block Party — somewhere for the party to happen</title>
+    <id>tag:rvenning.github.io,2026-09-12:block-party-redrawn</id>
+    <updated>2026-09-12T21:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/block-party/"/>
+    <summary>Block Party plays exactly as it did — same pieces, same eight-by-eight board, same combo streak, same Super Clear, and every best score and coin you have already earned is still there. What it has is somewhere to happen. The board used to be a rectangle floating on a flat purple screen; it is now a lit table in a party hall, with bunting strung above it, balloons drifting up the walls, confetti and streamers already fallen on the floor and glitter hanging in the light. None of that can ever get in the way of the game: every part of it is cut around the board and the tray, so a block is never hidden by decoration, even when all sixty-four squares are full. Four things that used to happen in silence now tell you something, and the important one is this: when you are holding a piece somewhere it will not fit, it now says so while you are still holding it, instead of only beeping at you once you had let go. A piece you drop somewhere impossible flies back to its tray rather than vanishing; picking one up lifts it off the table and leaves a hole behind; and setting one down lands it with a bump. A finished line gets a sweep of light down its length before it goes, a piece with nowhere left to play loses its colour and stops bobbing, and the title and results screens now draw real blocks instead of borrowing squares from your phone's emoji. Anyone who has asked their device for less movement gets a room that holds still.</summary>
+  </entry>
 
   <entry>
     <title>Chicken Cross — ten worlds that look like ten places</title>
