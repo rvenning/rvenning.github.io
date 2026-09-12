@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-13T09:00:00Z</updated>
+  <updated>2026-09-13T13:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Alien Chomp — a city worth eating</title>
+    <id>tag:rvenning.github.io,2026-09-13:alien-chomp-redrawn</id>
+    <updated>2026-09-13T13:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/alien-chomp/"/>
+    <summary>Nothing about how Alien Chomp plays has moved. Same five zones, same speeds, same hunger drain, same power-ups, same six aliens to unlock, and every best score, every metre and every alien you have already earned is exactly where you left it. What has changed is that it now looks like somebody meant it. The city used to be coloured rectangles. It is built out of real buildings now, with lit windows, water towers, aerial masts and neon signs, standing over a street with drains and cables and litter on it, and each of the five zones has its own weather and its own things lying about. The people you are chasing are people rather than stacked boxes, each carrying whatever they were carrying before you turned up, and every one of them is looking back over their shoulder at you. The robots have been pulled as far away from them as possible, because the whole game is one question asked over and over at speed: is that food, or is that metal? A robot is flat-topped and hard-edged where a person is round and soft, wears a yellow-and-black hazard stripe no person ever wears, and glares with one red eye where a person has two white ones. The patrol bot, the only one you are allowed to stomp on, has a bolted plate on its head with an arrow stamped into it, and nothing else in the game has one. The biggest change is one you feel rather than see. Hunger is the clock this entire game runs on, and until now the only way to know how close you were to starving was to look away from the road at a bar along the top. The picture itself tells you now: below half full the edges of the screen start closing in, and below a quarter they breathe. It is painted around the outside, so it never covers the part you are reading. Jumping a robot by a hair finally does something too, which it never used to. And anyone who has asked their device for less movement gets a city that holds still.</summary>
+  </entry>
 
   <entry>
     <title>Chicken Cross — all twelve birds, redrawn</title>
