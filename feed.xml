@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-12T09:00:00Z</updated>
+  <updated>2026-09-12T14:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Chicken Cross — the flamingo is a flamingo now</title>
+    <id>tag:rvenning.github.io,2026-09-12:chicken-cross-flamingo</id>
+    <updated>2026-09-12T14:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/chicken-cross/"/>
+    <summary>Rosalie pointed out that the flamingo you could pick as your bird just looked like a chicken painted pink, and she was completely right — underneath it was the chicken, with pink paint and very slightly longer legs. It has been redrawn from scratch as an actual flamingo: a small body carried high on stilt legs, a long curving neck, and a big pale bill that bends sharply down to a black tip. Leave it standing still for a moment and it tucks one leg up, the way they really do. Nothing about the game has changed — same levels, same traffic, same scores, and every other bird is exactly as it was — and the new one is careful to stay short enough that it never hides the cars in the lane you are about to cross.</summary>
+  </entry>
 
   <entry>
     <title>Tiny Rex — a valley worth looking at</title>
