@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-13T14:00:00Z</updated>
+  <updated>2026-09-14T09:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>BRIX — a new game</title>
+    <id>tag:rvenning.github.io,2026-09-14:brix</id>
+    <updated>2026-09-14T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/brix/"/>
+    <summary>A 1991 DOS puzzle game, back with all 112 of its original levels. Pick up a block, push it sideways, let it fall, and when blocks of the same kind touch they blast away — clear them all before the clock runs out. If a colour has three blocks left, all three have to meet at once, and later levels add elevators that carry blocks up and down on their own timetable. The levels were lifted straight out of the original game's data rather than retyped, and the original program was run in an emulator while the new version was checked against it move for move, so every puzzle plays exactly as it did in 1991. Everything around the puzzles is new: fresh art, sound and animation, touch controls, a tree of levels to choose your path through, practice mode with replays of your best clears, and a level editor. Works offline once it has loaded.</summary>
+  </entry>
 
   <entry>
     <title>Containment — a new game</title>
