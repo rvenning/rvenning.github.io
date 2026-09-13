@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-13T13:00:00Z</updated>
+  <updated>2026-09-13T14:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Containment — a new game</title>
+    <id>tag:rvenning.github.io,2026-09-13:containment</id>
+    <updated>2026-09-13T14:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/containment/"/>
+    <summary>JezzBall, rebuilt for a phone. Particles bounce around a containment chamber and you build walls to pen them in: tap a cell and a wall grows both ways at once, and any space left without a particle seals off as yours. Claim three-quarters of the chamber to go up a level. But a particle that touches a wall while it is still growing smashes it and costs a life, so every wall is a bet on where everything will be a second from now. Level one has two particles and two lives; level ten has eleven of each. No map, nothing to unlock — one run, as deep as you can go, with your best score on the family leaderboard. Swipe to build, or play it with a mouse the original way. For teenagers and grown-ups.</summary>
+  </entry>
 
   <entry>
     <title>Alien Chomp — a city worth eating</title>
