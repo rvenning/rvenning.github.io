@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-17T09:00:00Z</updated>
+  <updated>2026-09-17T15:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Fishing Tycoon has been hand-painted</title>
+    <id>tag:rvenning.github.io,2026-09-17:fishing-tycoon-storybook</id>
+    <updated>2026-09-17T15:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/fishing-tycoon/"/>
+    <summary>Same game, same saves, same rules — it just looks like a picture book now. Every fishing spot has been repainted in watercolour with a warm brown pen: a pond with a wooden dock and a cottage on the hill, a river with a stone bridge, a lake under snowy mountains, a seaside pier with a row of painted houses and a lighthouse, the open sea, and a starry deep sea at night. Your crew and all 56 catches share the same hand-drawn look, reeling in now uses a curved gauge with a needle, a bite pops up a big honey-coloured !, and the controls are parchment buttons on a wooden plank around a round cast dial. Your progress carries straight over.</summary>
+  </entry>
 
   <entry>
     <title>Fishing Tycoon — a new game</title>
