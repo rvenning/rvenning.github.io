@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-19T00:56:11Z</updated>
+  <updated>2026-09-24T01:30:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Pinball Parade</title>
+    <id>tag:rvenning.github.io,2026-09-24:pinball-parade</id>
+    <updated>2026-09-24T01:30:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/pinball-parade/"/>
+    <summary>A new game: storybook pinball. Five little mechanical worlds — a moonlit castle with a sleeping dragon, a jungle temple, the deep sea, a clockwork workshop and a kingdom in the clouds — and twenty chapters, each asking for three simple things like ringing the bells or crossing the drawbridge. Hold either side of the screen to flip, both at once if you like. Gentle enough for a five-year-old to start, with free play and a Daily Parade for the family high scores.</summary>
+  </entry>
 
   <entry>
     <title>Fishing Tycoon gets a final storybook polish</title>
