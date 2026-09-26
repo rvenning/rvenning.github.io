@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-26T09:00:00Z</updated>
+  <updated>2026-09-27T09:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Canasta</title>
+    <id>tag:rvenning.github.io,2026-09-27:canasta</id>
+    <updated>2026-09-27T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/canasta/"/>
+    <summary>A new game: Classic Canasta, the card game from Montevideo. Meld cards of the same rank, use jokers and twos as wild cards, and build canastas of seven to go out; take the whole discard pile when you can use its top card. Two, three or four players — head to head, in partnerships, or the three-player game where the first to take the pile plays alone. Pass one device round the table or play the computer at three levels, with a tutorial and move guidance, a 3D Río de la Plata table and candombe drums. Works offline.</summary>
+  </entry>
 
   <entry>
     <title>Scopa</title>
