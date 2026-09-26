@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-09-24T15:26:16Z</updated>
+  <updated>2026-09-26T09:00:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Scopa</title>
+    <id>tag:rvenning.github.io,2026-09-26:scopa</id>
+    <updated>2026-09-26T09:00:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/scopa/"/>
+    <summary>A new game: Scopa, the Italian card game. Capture table cards that match your card’s value or add up to it, and sweep the whole table for a scopa. Play the computer at three levels, or pass one phone around with a private hand for each player, in partnerships too. Seven ways to play, from Classic to Scopone Scientifico and Cirulla, with a tutorial and a helper that shows every legal capture without choosing for you. Traditional Neapolitan cards on a 3D table with real card sounds, and it works offline.</summary>
+  </entry>
 
   <entry>
     <title>Chicken Cross: Hop In, and 420 characters to collect</title>
