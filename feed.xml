@@ -7,7 +7,7 @@
   <link rel="alternate" type="text/html" href="https://rvenning.github.io/"/>
   <link rel="self" type="application/atom+xml" href="https://rvenning.github.io/feed.xml"/>
   <author><name>The Venning family</name></author>
-  <updated>2026-10-03T03:46:51Z</updated>
+  <updated>2026-10-23T09:30:00Z</updated>
 
   <!--
     POSTING AN UPDATE
@@ -40,6 +40,14 @@
     &mdash; are not allowed in this file at all and will break the whole feed.
     Inside a comment like this one, never put two hyphens next to each other.
   -->
+
+  <entry>
+    <title>Slice of Life</title>
+    <id>tag:rvenning.github.io,2026-10-23:slice-of-life</id>
+    <updated>2026-10-23T09:30:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://rvenning.github.io/slice-of-life/"/>
+    <summary>A new game: Slice of Life, a pizza shop of your own. A customer tells you their order once, out loud — listen, then make exactly that: drag the sauce and cheese, lay the toppings by hand (half and half if they ask), send it round the oven once, twice or three times, cut it and serve it. Get it right and they tip; get it wrong and they hand it back. Ingredients cost real money, fifty-odd customers turn up with their own voices, and five chapters put a rival across the street — each ending with a food critic. Spend your takings on toppings, a faster oven and the decor. Works offline.</summary>
+  </entry>
 
   <entry>
     <title>Scribble Speedway: longer races, wider roads, every circuit open</title>
